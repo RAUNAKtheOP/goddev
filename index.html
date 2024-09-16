@@ -7,18 +7,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Discord Bot</h1>
-  </header>
-  
-  <section>
-    <p>This bot helps you with XYZ features, such as moderation, fun commands, and much more.</p>
-    <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" class="btn">Add Me to Your Server</a>
-  </section>
-  
-  <footer>
-    <a href="https://github.com/yourusername/yourbot" class="btn">Help Center</a>
-  </footer>
+  <!-- Slide-out menu -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#commands">Command Menu</a>
+    <a href="#configure">Bot Configuration</a>
+  </div>
+
+  <!-- 3-arrow button for opening the slide bar -->
+  <span class="openbtn" onclick="openNav()">&#9776;&#9776;&#9776;</span>
+
+  <div class="main-content">
+    <header>
+      <h1>Welcome to My Fancy Discord Bot</h1>
+      <p>Enhance your Discord experience with amazing features!</p>
+    </header>
+    <section>
+      <a href="https://discord.com/api/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot" class="btn">Add Me to Your Server</a>
+      <a href="https://github.com/yourusername/yourbot" class="btn">Help Center</a>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
-
